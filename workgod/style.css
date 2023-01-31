@@ -1,0 +1,564 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+.hero{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#video{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -100;
+}
+.hero-data{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+header{
+    width: 100%;
+    
+}
+
+.heading{
+    background-color: rgba(0, 0, 0, 0.493);
+    width: 100%;
+    margin: auto;
+    padding: 0px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 9999;
+
+}
+
+.headerFixed{ 
+    background-color: white !important;
+    position: fixed;
+}
+.h1Fixed{
+    color: black !important;
+}
+
+.headerFixed .heading ul li{
+    color: black !important;
+}
+
+.pullup{
+    display: block;
+    width: 30%;
+}
+.h1{
+    color: white;
+}
+.h1 span{
+    color:orangered;
+}
+.btnjs{
+    display: none ;
+    padding: 0px 10px;
+    background-color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+
+}
+.panel{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+}
+.panel li{
+    list-style-type: none;
+}
+.list{    color: white;
+    padding: 15px;
+}
+.list:hover{
+    color: orangered;
+    padding: 15px;
+    transition: 1s;
+}
+.panel button{
+    background-color: orangered;
+    color: white;
+    padding: 15px;
+    margin-bottom: 5px;
+    border: none;
+    outline-color: orangered;
+}
+.panel button:hover{
+    background-color: rgb(235, 95, 44);
+    cursor: pointer;
+    transition: 1s;
+}
+.dropdown{
+    position: relative;
+    display: inline-block; 
+}
+.accbtn{
+    background-color: #fff;
+    padding: 7px;
+    border: none;
+    cursor: pointer;
+}
+.accbtn:hover, .accbtn:focus {
+    background-color: black;
+    color: white;
+}
+#myAcc{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+#myAcc a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+}
+#myAcc a:hover{
+    background-color: rgba(0, 0, 0, 0.178);
+}
+
+
+#workhard{
+    height: 108%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.data{
+    text-align: center;
+    top: 35%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    z-index: 1;
+    width: 70%;
+}
+.data{
+    line-height: 90px;
+}
+.data h1{
+    color: white;
+    font-size: 20px;
+}
+#h1{
+    font-size: 90px;
+    
+}
+#h1 span{
+    color: orangered;
+}
+.data button{
+    padding: 15px;
+    background-color: orangered;
+    color: white;
+    width: 20%;
+    border: none;
+    outline-color: orangered;
+}
+.data button:hover{
+    background-color: rgb(235, 95, 44);
+    cursor: pointer;
+    transition: 1s;
+}
+.about{
+    padding-top: 180px;
+}
+.programs{
+    text-align: center;
+    padding: 15px;
+    line-height: 25px;
+}
+.programs p{
+    padding: 15px;
+    color: gray;
+    font-size: 14px;
+}
+.programs img{
+    padding-top: 20px;
+}
+.programs h1 span{
+    color: orangered;
+}
+.programs-data{
+    display: flex;
+    align-items: center;
+    margin-left: 15%;
+}
+.program1{
+    display: flex;
+    line-height: 25px;
+}
+.program1 p{
+    color: gray;
+    padding: 0px 20px;
+    font-size: 14px;
+}
+.program1 p strong{
+    color: black;
+    font-size: 20px;
+}
+.program1 a{
+    color: orangered;
+}
+#a{
+    color: blue;
+}
+.ab-data{
+    width: 100vw;
+    height: 50vh;
+    background-image: url(./assets/images/cta-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.ab-data1{
+    text-align: center;
+    line-height: 25px;
+    top: 35%;
+    left: 45%;
+    transform: translate(-50%);
+    position: absolute;
+   width: 70%;
+}
+.ab-data1 h1{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.ab-data1 h1 span{
+    color: orangered;
+}
+.ab-data1 p{
+    color: white;
+    margin-bottom: 10px;
+}
+.ab-data1 button{
+    padding: 15px;
+    background-color: orangered;
+    color: white;
+    width: 25%;
+    border: none;
+    outline-color:rgb(235, 95, 44);
+}
+.ab-data1 button:hover{
+    background-color: rgb(235, 95, 44);
+    cursor: pointer;
+    transition: 1s;
+}
+.classes-data{
+    text-align: center;
+    padding: 15px;
+    line-height: 25px;
+}
+.classes-data p{
+    padding: 15px;
+    color: gray;
+    font-size: 14px;
+}
+.classes-data img{
+    padding-top: 20px;
+}
+.classes-data h1 span{
+    color: orangered;
+}
+.class-program{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.class-pro1{
+    width: 30%;
+}
+
+.class-pro button{
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 1px 8px 1px rgba(0, 0, 0, 0.171);
+    width: 100%;
+    height: 100px;
+    z-index: 999;
+    background-color: #fff;
+    border:  solid 2px  white;
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+
+
+.class-pro button strong{
+    margin-left: 20px;
+}
+.class-pro button:focus{
+    color: orangered;
+    cursor: pointer;
+    border: none;
+    outline-color: white;
+}
+#button{
+    background-color: orangered;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    outline-color:rgb(235, 95, 44);
+}
+#button:hover{
+    background-color: rgb(235, 95, 44);
+    cursor: pointer;
+    transition: 1s;
+}
+.class-pro2{
+    width: 65%;
+    line-height: 20px;
+}
+.class-pro2 img{
+    border-radius: 5px;
+}
+.class-pro2 p strong{
+    font-size: 25px;
+    color: black;
+}
+.class-pro2 p{
+    font-size: 14px;
+    color: gray;
+}
+.class-pro2 button{
+    background-color: orangered;
+    color: white;
+    border: none;
+    /* width: 40%; */
+    padding: 15px;
+    font-size: 15px;
+    outline-color: rgb(235, 95, 44);
+
+}
+.class-pro2 button:hover{
+    background-color: rgb(235, 95, 44);
+    cursor: pointer;
+    transition: 1s;
+}
+.schedules{
+    width:100vw;
+    height:140vh;
+    background: url(./assets/images/schedule-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+    margin-top:45px;
+}
+.schedules-data{
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 30px;
+    line-height: 25px;
+}
+.schedules-data p{
+    padding-top: 15px;
+    color: white;
+    font-size: 14px;
+}
+.schedules-data img{
+    padding-top: 20px;
+}
+.schedules-data h1{
+    color: white;
+}
+.schedules-data h1 span{
+    color: orangered;
+}
+.ul{
+    display: flex;
+    margin-left: 35%;
+}
+.ul li{
+    list-style-type: none;
+}
+.ul li a{
+    color: white;
+    padding: 10px;
+}
+.ul li a:active{
+    color: orangered;
+    padding: 10px;
+}
+.ul span{
+    color: white;
+}
+table{
+    color: white;
+    font-size: 14px;
+    width: 68%;
+    margin: auto;
+    border: solid 1px white;
+    text-align: center;
+    align-items: center;
+    border-collapse: collapse;
+}
+td{
+    border: solid 1px white;
+    padding: 40px; 
+}
+
+.trainer{
+    width: 80%;
+    margin: auto;
+}
+
+.trainer-data{
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 30px;
+    line-height: 25px;
+}
+.trainer-data p{
+    padding-top: 15px;
+    color: gray;
+    font-size: 14px;
+}
+.trainer-data img{
+    padding-top: 20px;
+}
+.trainer-data h1{
+    color: black;
+}
+.trainer-data h1 span{
+    color: orangered;
+}
+
+.trainers-pic{
+    display: flex;
+    justify-content: space-between;
+}
+.trainers-pic1{
+    align-items: center;
+    width:31%;
+    height: auto;
+    padding: 30px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.171);
+    z-index: -999;
+    border-radius: 5px;
+}
+
+.trainers-pic1 p{
+    color: orangered;
+    font-size: 13px;
+}
+.trainers-pic1 strong{
+    color: black;
+    font-size: 20px;
+}
+.trainers-pic1 span{
+    color: gray;
+    font-size: 14px;
+}
+.trainers-pic1 a img{
+    padding: 5px;
+    filter: grayscale(100%);
+}
+.trainers-pic1 a img:hover{
+    filter: contrast(100%);
+    cursor: pointer;
+}
+.contact-data{
+    display: flex;
+}
+iframe{
+    height: 80vh;
+}
+.img{
+    width: 100vw;
+    height: 80vh;
+    background: url(./assets/images/contact-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+}
+.inputs{
+    width: 49%;
+    padding: 10px;
+}
+.input{
+    width: 100%;
+    padding: 10px;
+}
+.img-data{
+    width: 80%;
+    height: 60vh;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 30px;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    z-index: 1;
+}
+.form inputs{
+    border: solid 1px red;
+    padding-left: 100px;
+}
+.form button{
+    background-color: orangered;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 15px;
+    outline-color: white;
+}
+.form button:hover{
+    background-color: rgb(235, 95, 44);
+    cursor: pointer;
+    transition: 1s;
+}
+.footer{
+    padding: 30px;
+    text-align: center;
+}
+.footer p{
+    font-size: 14px;
+}
+.footer a{
+    color: orangered;
+}
+

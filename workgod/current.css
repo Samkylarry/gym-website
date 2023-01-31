@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.body{
+    font-family: sans-serif;
+}
+
+
+/* .heading h1 li{ */
+    border: solid 1px red;
+    height: 100%;
+}
+
+.bold{
+    border: solid 1px green;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bold h1{
+    padding-left: 5%;
+    font-style: italic;
+}
+
+.bold ul li{
+    text-decoration: none;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+   border: solid 1px red;    padding-left: -40px;
+}
